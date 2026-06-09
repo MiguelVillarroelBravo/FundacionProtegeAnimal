@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: ms-gateway
+  cloud:
+    gateway:
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders: "*"
+      routes:
+        - id: ms-donacion
+          uri: http://localhost:8081
+          predicates:
+            - Path=/api/donaciones/**,/api/donantes/**
+        - id: ms-inventario
+          uri: http://localhost:8082
+          predicates:
+            - Path=/api/inventario/**
+        - id: ms-alertas
+          uri: http://localhost:8083
+          predicates:
+            - Path=/api/alertas/**
+        - id: ms-apadrinamientos
+          uri: http://localhost:8084
+          predicates:
+            - Path=/api/apadrinamientos/**
+        - id: ms-voluntariado
+          uri: http://localhost:8085
+          predicates:
+            - Path=/api/voluntariado/**
+
+server:
+  port: 8080

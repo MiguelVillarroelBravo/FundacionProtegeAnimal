@@ -1,0 +1,5 @@
+com\fundacionanimal\ms_apadrinamientos\MsApadrinamientosApplication.class
+com\fundacionanimal\ms_apadrinamientos\controller\ApadrinamientoController.class
+com\fundacionanimal\ms_apadrinamientos\service\ApadrinamientoService.class
+com\fundacionanimal\ms_apadrinamientos\model\Apadrinamiento.class
+com\fundacionanimal\ms_apadrinamientos\repository\ApadrinamientoRepository.class

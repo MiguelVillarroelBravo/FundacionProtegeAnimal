@@ -1,0 +1,5 @@
+com\fundacionanimal\ms_alertas\service\AlertaService.class
+com\fundacionanimal\ms_alertas\MsAlertasApplication.class
+com\fundacionanimal\ms_alertas\controller\AlertaController.class
+com\fundacionanimal\ms_alertas\model\Alerta.class
+com\fundacionanimal\ms_alertas\repository\AlertaRepository.class
