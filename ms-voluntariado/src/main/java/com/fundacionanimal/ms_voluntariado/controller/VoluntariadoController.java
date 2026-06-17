@@ -32,6 +32,13 @@ public class VoluntariadoController {
 		return ResponseEntity.ok(voluntariadoService.listarActividadesDisponibles());
 	}
 
+	// POST http://localhost:8085/api/voluntariado/actividades
+	@PostMapping("/actividades")
+	public ResponseEntity<Actividad> crearActividad(@RequestBody Actividad actividad) {
+		Actividad nuevaActividad = voluntariadoService.registrarActividad(actividad);
+		return new ResponseEntity<>(nuevaActividad, HttpStatus.CREATED);
+	}
+
 	// POST http://localhost:8085/api/voluntariado/inscribir
 	@PostMapping("/inscribir")
 	public ResponseEntity<InscripcionVoluntario> inscribirVoluntario(@RequestBody InscripcionVoluntario inscripcion) {

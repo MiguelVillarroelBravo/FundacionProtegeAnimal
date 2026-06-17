@@ -1,0 +1,67 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DonacionApplication<ms-donacion>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fundacionanimal.donacion.DonacionApplication",
+            "projectName": "ms-donacion",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=57096 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-donacion"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsGatewayApplication<ms-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fundacionanimal.ms_gateway.MsGatewayApplication",
+            "projectName": "ms-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsInventarioApplication<ms-inventario>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fundacionanimal.ms_inventario.MsInventarioApplication",
+            "projectName": "ms-inventario",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsAlertasApplication<ms-alertas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fundacionanimal.ms_alertas.MsAlertasApplication",
+            "projectName": "ms-alertas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58573 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-alertas"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsApadrinamientosApplication<ms-apadrinamientos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fundacionanimal.ms_apadrinamientos.MsApadrinamientosApplication",
+            "projectName": "ms-apadrinamientos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=51996 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=ms-apadrinamientos"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsVoluntariadoApplication<ms-voluntariado>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fundacionanimal.ms_voluntariado.MsVoluntariadoApplication",
+            "projectName": "ms-voluntariado",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

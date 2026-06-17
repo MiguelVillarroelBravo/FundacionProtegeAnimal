@@ -28,6 +28,13 @@ public class VoluntariadoService {
 		return actividadRepository.findByCuposDisponiblesGreaterThan(0);
 	}
 
+	public Actividad registrarActividad(Actividad actividad) {
+		if (actividad.getCuposDisponibles() == null) {
+			actividad.setCuposDisponibles(0);
+		}
+		return actividadRepository.save(actividad);
+	}
+
 	@Transactional
 	public InscripcionVoluntario inscribirVoluntario(InscripcionVoluntario inscripcion) {
 		Optional<Actividad> opcionalActividad = actividadRepository.findById(inscripcion.getIdActividad());

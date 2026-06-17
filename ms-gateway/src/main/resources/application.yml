@@ -7,7 +7,7 @@ spring:
         add-to-simple-url-handler-mapping: true
         cors-configurations:
           '[/**]':
-            allowedOrigins: "*"
+            allowedOriginPatterns: "*"
             allowedMethods:
               - GET
               - POST
@@ -19,23 +19,23 @@ spring:
         - id: ms-donacion
           uri: http://localhost:8081
           predicates:
-            - Path=/api/donaciones/**,/api/donantes/**
+            - Path=/api/donaciones,/api/donaciones/**,/api/donantes,/api/donantes/**
         - id: ms-inventario
           uri: http://localhost:8082
           predicates:
-            - Path=/api/inventario/**
+            - Path=/api/inventario,/api/inventario/**
         - id: ms-alertas
           uri: http://localhost:8083
           predicates:
-            - Path=/api/alertas/**
+            - Path=/api/alertas,/api/alertas/**
         - id: ms-apadrinamientos
           uri: http://localhost:8084
           predicates:
-            - Path=/api/apadrinamientos/**
+            - Path=/api/apadrinamientos,/api/apadrinamientos/**
         - id: ms-voluntariado
           uri: http://localhost:8085
           predicates:
-            - Path=/api/voluntariado/**
+            - Path=/api/voluntariado,/api/voluntariado/**
 
 server:
   port: 8080

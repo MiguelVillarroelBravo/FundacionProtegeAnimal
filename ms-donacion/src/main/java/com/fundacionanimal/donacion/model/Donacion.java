@@ -40,6 +40,6 @@ public class Donacion {
 	private String estado;
 
 	@ManyToOne
-	@JoinColumn(name = "fk_rut", referencedColumnName = "rut_donante", nullable = false)
+	@JoinColumn(name = "fk_rut", referencedColumnName = "rut", nullable = false)
 	private Donante donante;
 }
