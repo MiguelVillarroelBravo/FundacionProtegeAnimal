@@ -1,0 +1,7 @@
+com\fundacionanimal\ms_voluntariado\MsVoluntariadoApplication.class
+com\fundacionanimal\ms_voluntariado\service\VoluntariadoService.class
+com\fundacionanimal\ms_voluntariado\model\Actividad.class
+com\fundacionanimal\ms_voluntariado\repository\InscripcionVoluntarioRepository.class
+com\fundacionanimal\ms_voluntariado\repository\ActividadRepository.class
+com\fundacionanimal\ms_voluntariado\model\InscripcionVoluntario.class
+com\fundacionanimal\ms_voluntariado\controller\VoluntariadoController.class
