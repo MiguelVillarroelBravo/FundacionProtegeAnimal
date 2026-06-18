@@ -40,11 +40,7 @@
 
 # 
 
-# 🧩 Microservicios
 
-# 
-
-# MicroservicioPuertoDescripciónms-gateway8080API Gateway — enruta todas las peticiones del frontendms-donacion8081Gestión de donaciones y donantesms-inventario8082Control de insumos e inventario de la fundaciónms-alertas8083Alertas internas de la fundaciónms-apadrinamiento8084Gestión de padrinos (personas que aportan mensualmente a un animal específico)ms-voluntariado8085Registro y gestión de voluntarios
 
 # 
 
